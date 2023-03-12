@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style12.css" />
+    <title>Week 12 CRUD App</title>
+  </head>
+  <body class="container">
+    <h1 class="text-center">Book of Heroes</h1>
+    <br /><br />
+    <h2 class="text-center">
+      Add your name to the Book of Heroes and be remembered for all eternity!
+    </h2>
+    <p class="text-center">
+      - A handy tool for Player Character's to keep track of their numerous
+      Characters and which Campaigns and/or Adventures they belong to. -
+    </p>
+    <div id="new-entry" class="jumbotron">
+      <h3 class="text-center">New Character</h3>
+      <br />
+      <button
+        onclick="createCharacter()"
+        id="create-new-character"
+        class="btn btn-success form-control"
+      >
+        Create
+      </button>
+    </div>
+    <div id="app"></div>
+    <div id="characterContainer" class="card"></div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index12.js"></script>
+  </body>
+</html>
